@@ -7,7 +7,7 @@
 
 import Foundation
 
-class StoreItemController {
+class NetworkController {
     
     enum StoreItemError: Error, LocalizedError {
         case personnelItemNotFound

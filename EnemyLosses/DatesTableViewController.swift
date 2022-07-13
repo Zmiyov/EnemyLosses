@@ -13,12 +13,21 @@ class DatesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        fetchPersonnelItems()
+    }
+    
+    func fetchPersonnelItems() {
+        let networkController = NetworkController()
+        
+        Task {
+            do {
+                let fetchedItems = try await networkController.fetchPersonnel()
+                self.items = fetchedItems
+                self.tableView.reloadData()
+            } catch {
+                print("Error fetching data: \(error)")
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -30,18 +39,22 @@ class DatesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return items.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dates", for: indexPath)
+        let dateItem = items[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        content.text = String(dateItem.day)
+        content.text = dateItem.date
+        cell.contentConfiguration = content
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
