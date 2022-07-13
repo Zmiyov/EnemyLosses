@@ -8,6 +8,8 @@
 import UIKit
 
 class DatesTableViewController: UITableViewController {
+    
+    var items = [Personnel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
