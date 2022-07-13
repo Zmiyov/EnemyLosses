@@ -23,11 +23,11 @@ class DetailsViewController: UIViewController {
     @IBOutlet var amountOfAntiAircraftWareFareLabel: UILabel!
     
     
-    var equipment = [Equipment]()
-    var personnel: Personnel
+    var equipment: Equipment
+//    var personnel: Personnel
     
-    init?(coder:NSCoder, personnel: Personnel) {
-        self.personnel = personnel
+    init?(coder:NSCoder, equipment: Equipment) {
+        self.equipment = equipment
         super.init(coder: coder)
     }
     
@@ -42,7 +42,18 @@ class DetailsViewController: UIViewController {
     }
     
     func updateUI() {
-        
+        dateLabel.text = equipment.date
+        amountOfAircraftsLabel.text = String(equipment.aircraft)
+        amountOfHelicoptersLabel.text = String(equipment.helicopter)
+        amountOfTanksLabel.text = String(equipment.tank)
+        amountOfApcLabel.text = String(equipment.apc)
+        amountOfFieldArtilleryLabel.text = String(equipment.fieldArtillery)
+        amountOfMrlLabel.text = String(equipment.mrl)
+        amountOfMilitaryAutoLabel.text = String(equipment.militaryAuto)
+        amountOfFuelTanksLabel.text = String(equipment.fuelTank)
+        amountOfDronesLabel.text = String(equipment.drone)
+        amountOfNavalShipsLabel.text = String(equipment.navalShip)
+        amountOfAntiAircraftWareFareLabel.text = String(equipment.antiAircraftWareFare)
     }
     
 

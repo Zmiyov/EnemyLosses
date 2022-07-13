@@ -10,6 +10,7 @@ import UIKit
 class DatesTableViewController: UITableViewController {
     
     var items = [Personnel]()
+    var equipments = [Equipment]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +36,8 @@ class DatesTableViewController: UITableViewController {
         guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
             return nil
         }
-        let item = items[indexPath.row]
-        return DetailsViewController(coder: coder, personnel: item)
+        let item = equipments[indexPath.row]
+        return DetailsViewController(coder: coder, equipment: item)
     }
     
     // MARK: - Table view data source
