@@ -20,7 +20,7 @@ struct Equipment: Codable {
     var fuelTank: Int
     var drone: Int
     var navalShip: Int
-    var antiAircaftWareFare: Int
+    var antiAircraftWareFare: Int
     
     enum CodingKeys: String, CodingKey {
         case date
@@ -35,6 +35,6 @@ struct Equipment: Codable {
         case fuelTank = "fuel tank"
         case drone
         case navalShip = "naval ship"
-        case antiAircaftWareFare = "anti-aircraft warfare"
+        case antiAircraftWareFare = "anti-aircraft warfare"
     }
 }

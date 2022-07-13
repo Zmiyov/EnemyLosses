@@ -16,6 +16,8 @@
 		A547AA4D287EB9C60099B802 /* russia_losses_equipment.json.webloc in Resources */ = {isa = PBXBuildFile; fileRef = A547AA4B287EB9C60099B802 /* russia_losses_equipment.json.webloc */; };
 		A547AA4F287EBDFA0099B802 /* Personnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A547AA4E287EBDFA0099B802 /* Personnel.swift */; };
 		A547AA51287EBE040099B802 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A547AA50287EBE040099B802 /* Equipment.swift */; };
+		A547AA53287EC4950099B802 /* DatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A547AA52287EC4950099B802 /* DatesTableViewController.swift */; };
+		A547AA55287EC4BC0099B802 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A547AA54287EC4BC0099B802 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A547AA4B287EB9C60099B802 /* russia_losses_equipment.json.webloc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = russia_losses_equipment.json.webloc; sourceTree = "<group>"; };
 		A547AA4E287EBDFA0099B802 /* Personnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personnel.swift; sourceTree = "<group>"; };
 		A547AA50287EBE040099B802 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		A547AA52287EC4950099B802 /* DatesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesTableViewController.swift; sourceTree = "<group>"; };
+		A547AA54287EC4BC0099B802 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				A547AA36287EB9A60099B802 /* AppDelegate.swift */,
 				A547AA38287EB9A60099B802 /* SceneDelegate.swift */,
 				A547AA3C287EB9A60099B802 /* Main.storyboard */,
+				A547AA54287EC4BC0099B802 /* DetailsViewController.swift */,
+				A547AA52287EC4950099B802 /* DatesTableViewController.swift */,
 				A547AA4E287EBDFA0099B802 /* Personnel.swift */,
 				A547AA50287EBE040099B802 /* Equipment.swift */,
 				A547AA3F287EB9A90099B802 /* Assets.xcassets */,
@@ -153,6 +159,8 @@
 				A547AA39287EB9A60099B802 /* SceneDelegate.swift in Sources */,
 				A547AA51287EBE040099B802 /* Equipment.swift in Sources */,
 				A547AA4F287EBDFA0099B802 /* Personnel.swift in Sources */,
+				A547AA53287EC4950099B802 /* DatesTableViewController.swift in Sources */,
+				A547AA55287EC4BC0099B802 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
