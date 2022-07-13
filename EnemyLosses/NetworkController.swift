@@ -15,7 +15,7 @@ class NetworkController {
     }
     
     func fetchPersonnel() async throws -> [Personnel] {
-        let urlComponents = URLComponents(string: "https://github.com/MacPaw/2022-Ukraine-Russia-War-Dataset/blob/main/data/russia_losses_personnel.json")!
+        let urlComponents = URLComponents(string: "https://raw.githubusercontent.com/MacPaw/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_personnel.json")!
         
         let (data, response) = try await URLSession.shared.data(from: urlComponents.url!)
         
@@ -24,11 +24,12 @@ class NetworkController {
         }
         let decoder = JSONDecoder()
         let personnelResponse = try decoder.decode([Personnel].self, from: data)
+        //print(personnelResponse)
         return personnelResponse
     }
     
     func fetchEquipment() async throws -> [Equipment] {
-        let urlComponents = URLComponents(string: "https://github.com/MacPaw/2022-Ukraine-Russia-War-Dataset/blob/main/data/russia_losses_equipment.json")!
+        let urlComponents = URLComponents(string: "https://raw.githubusercontent.com/MacPaw/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment.json")!
         
         let (data, response) = try await URLSession.shared.data(from: urlComponents.url!)
         

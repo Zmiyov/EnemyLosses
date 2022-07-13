@@ -21,3 +21,7 @@ struct Personnel: Codable {
         case pow = "POW"
     }
 }
+
+//struct PersonnelResponse: Codable {
+//    let result: [Personnel]
+//}

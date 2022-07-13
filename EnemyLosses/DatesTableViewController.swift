@@ -23,18 +23,27 @@ class DatesTableViewController: UITableViewController {
             do {
                 let fetchedItems = try await networkController.fetchPersonnel()
                 self.items = fetchedItems
+                print(items.count)
                 self.tableView.reloadData()
             } catch {
                 print("Error fetching data: \(error)")
             }
         }
     }
-
+    @IBSegueAction func showDetails(_ coder: NSCoder, sender: Any?) -> DetailsViewController? {
+        
+        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
+            return nil
+        }
+        let item = items[indexPath.row]
+        return DetailsViewController(coder: coder, personnel: item)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,10 +55,10 @@ class DatesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dates", for: indexPath)
         let dateItem = items[indexPath.row]
-        
+
         var content = cell.defaultContentConfiguration()
         content.text = String(dateItem.day)
-        content.text = dateItem.date
+        content.secondaryText = dateItem.date
         cell.contentConfiguration = content
 
         return cell
