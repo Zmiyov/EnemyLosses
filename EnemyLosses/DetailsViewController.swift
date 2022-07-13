@@ -24,7 +24,6 @@ class DetailsViewController: UIViewController {
     
     
     var equipment: Equipment
-//    var personnel: Personnel
     
     init?(coder:NSCoder, equipment: Equipment) {
         self.equipment = equipment
@@ -49,8 +48,18 @@ class DetailsViewController: UIViewController {
         amountOfApcLabel.text = String(equipment.apc)
         amountOfFieldArtilleryLabel.text = String(equipment.fieldArtillery)
         amountOfMrlLabel.text = String(equipment.mrl)
-        amountOfMilitaryAutoLabel.text = String(equipment.militaryAuto)
-        amountOfFuelTanksLabel.text = String(equipment.fuelTank)
+        
+//        if let amountOfMilitaryAuto = equipment.militaryAuto {
+//        amountOfMilitaryAutoLabel.text = String(amountOfMilitaryAuto)
+//        } else {
+//            amountOfMilitaryAutoLabel.text = "NaN"
+//        }
+//        if let amountOfFuelTanks = equipment.fuelTank {
+//            amountOfFuelTanksLabel.text = String(amountOfFuelTanks)
+//        } else {
+//            amountOfFuelTanksLabel.text = "NaN"
+//        }
+       
         amountOfDronesLabel.text = String(equipment.drone)
         amountOfNavalShipsLabel.text = String(equipment.navalShip)
         amountOfAntiAircraftWareFareLabel.text = String(equipment.antiAircraftWareFare)

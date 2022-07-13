@@ -9,12 +9,13 @@ import UIKit
 
 class DatesTableViewController: UITableViewController {
     
-    var items = [Personnel]()
-    var equipments = [Equipment]()
+    var personnelsItems = [Personnel]()
+    var equipmentsItems = [Equipment]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchPersonnelItems()
+        fetchEquipmentItems()
     }
     
     func fetchPersonnelItems() {
@@ -23,22 +24,43 @@ class DatesTableViewController: UITableViewController {
         Task {
             do {
                 let fetchedItems = try await networkController.fetchPersonnel()
-                self.items = fetchedItems
-                print(items.count)
+                self.personnelsItems = fetchedItems
+                print(personnelsItems.count)
                 self.tableView.reloadData()
             } catch {
-                print("Error fetching data: \(error)")
+                print("Error fetching data personnel: \(error)")
             }
         }
     }
-    @IBSegueAction func showDetails(_ coder: NSCoder, sender: Any?) -> DetailsViewController? {
+    
+    func fetchEquipmentItems() {
+        let networkController = NetworkController()
         
-        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
-            return nil
+        Task {
+            do {
+                let fetchedItems = try await networkController.fetchEquipment()
+                self.equipmentsItems = fetchedItems
+                print(fetchedItems)
+                
+            } catch {
+                print("Error fetching data equipment: \(error)")
+            }
         }
-        let item = equipments[indexPath.row]
-        return DetailsViewController(coder: coder, equipment: item)
     }
+    
+//    @IBSegueAction func showDetails(_ coder: NSCoder, sender: Any?) -> DetailsViewController? {
+//        
+//        guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
+//            return nil
+//        }
+//        
+//        let dayFromPersonnels = personnelsItems[indexPath.row].day
+//        
+//        guard let index = equipmentsItems.first(where: { $0.day == dayFromPersonnels }) else { return nil }
+//        let item = index
+//        
+//        return DetailsViewController(coder: coder, equipment: item)
+//    }
     
     // MARK: - Table view data source
 
@@ -49,13 +71,13 @@ class DatesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items.count
+        return personnelsItems.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dates", for: indexPath)
-        let dateItem = items[indexPath.row]
+        let dateItem = personnelsItems[indexPath.row]
 
         var content = cell.defaultContentConfiguration()
         content.text = String(dateItem.day)
@@ -64,51 +86,5 @@ class DatesTableViewController: UITableViewController {
 
         return cell
     }
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

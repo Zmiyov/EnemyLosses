@@ -11,7 +11,6 @@ struct Personnel: Codable {
     var date: String
     var day: Int
     var personnel: Int
-    //          "personnel*": "about",
     var pow: Int
     
     enum CodingKeys: String, CodingKey {
@@ -22,6 +21,3 @@ struct Personnel: Codable {
     }
 }
 
-//struct PersonnelResponse: Codable {
-//    let result: [Personnel]
-//}
