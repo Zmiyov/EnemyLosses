@@ -26,7 +26,6 @@ class DetailsViewController: UIViewController {
     @IBOutlet var amountOfVehiclesAndFuelTanksLabel: UILabel!
     @IBOutlet var amountOfCruiseMissilesLabel: UILabel!
     
-    
     var equipment: Equipment
     
     init?(coder:NSCoder, equipment: Equipment) {
@@ -38,15 +37,10 @@ class DetailsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-       
     }
-    
     
     func updateUI() {
         let dateFormatter = DateFormatter()

@@ -50,10 +50,11 @@ class DatesTableViewController: UITableViewController {
         guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
             return nil
         }
-        
         let dayFromPersonnels = personnelsItems[indexPath.row].day
         
-        guard let index = equipmentsItems.first(where: { $0.day == dayFromPersonnels }) else { return nil }
+        guard let index = equipmentsItems.first(where: { $0.day == dayFromPersonnels }) else {
+            return nil
+        }
         let item = index
         
         return DetailsViewController(coder: coder, equipment: item)

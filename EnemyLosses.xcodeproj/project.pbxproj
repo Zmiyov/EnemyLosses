@@ -66,17 +66,41 @@
 			children = (
 				A547AA36287EB9A60099B802 /* AppDelegate.swift */,
 				A547AA38287EB9A60099B802 /* SceneDelegate.swift */,
-				A547AA3C287EB9A60099B802 /* Main.storyboard */,
-				A547AA54287EC4BC0099B802 /* DetailsViewController.swift */,
-				A547AA52287EC4950099B802 /* DatesTableViewController.swift */,
-				A547AA56287ECC5C0099B802 /* NetworkController.swift */,
-				A547AA4E287EBDFA0099B802 /* Personnel.swift */,
-				A547AA50287EBE040099B802 /* Equipment.swift */,
+				A547AA582880554A0099B802 /* Model */,
+				A547AA592880555B0099B802 /* View */,
+				A547AA5A2880556B0099B802 /* Controller */,
 				A547AA3F287EB9A90099B802 /* Assets.xcassets */,
 				A547AA41287EB9A90099B802 /* LaunchScreen.storyboard */,
 				A547AA44287EB9A90099B802 /* Info.plist */,
 			);
 			path = EnemyLosses;
+			sourceTree = "<group>";
+		};
+		A547AA582880554A0099B802 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A547AA4E287EBDFA0099B802 /* Personnel.swift */,
+				A547AA50287EBE040099B802 /* Equipment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A547AA592880555B0099B802 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A547AA3C287EB9A60099B802 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A547AA5A2880556B0099B802 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A547AA52287EC4950099B802 /* DatesTableViewController.swift */,
+				A547AA54287EC4BC0099B802 /* DetailsViewController.swift */,
+				A547AA56287ECC5C0099B802 /* NetworkController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
