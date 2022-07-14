@@ -82,8 +82,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-LZ-qg7">
-                                <rect key="frame" x="8" y="236" width="374" height="534"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-LZ-qg7">
+                                <rect key="frame" x="8" y="311" width="374" height="459"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-hQ-8te">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
@@ -107,7 +107,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="49w-Bu-ZcS">
-                                        <rect key="frame" x="0.0" y="34" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="29" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aircrafts:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaM-3b-iVN">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -128,7 +128,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fug-J4-b2D">
-                                        <rect key="frame" x="0.0" y="68" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="58" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helicopters:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSF-cg-1q7">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -149,7 +149,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fKN-Bk-4m7">
-                                        <rect key="frame" x="0.0" y="102" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="87" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanks:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-JD-fM4">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -170,7 +170,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1ei-sa-tBz">
-                                        <rect key="frame" x="0.0" y="136" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="116" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APC:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtP-VY-7Vb">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -191,7 +191,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JZ5-Ae-hpa">
-                                        <rect key="frame" x="0.0" y="170" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="145" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Artillery:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcX-0b-OE9">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -212,7 +212,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="obF-q8-5Gv">
-                                        <rect key="frame" x="0.0" y="204" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="174" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MRL:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-2b-fhQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -233,7 +233,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oy8-wL-J4Z">
-                                        <rect key="frame" x="0.0" y="238" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="203" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Military Auto:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yki-d5-gVH">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -254,7 +254,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZ4-eJ-cMV">
-                                        <rect key="frame" x="0.0" y="272" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="232" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Tanks:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecF-dZ-1BI">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -275,7 +275,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cqY-cr-hof">
-                                        <rect key="frame" x="0.0" y="306" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="261" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drones:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzs-M1-2EF">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -296,7 +296,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="EDD-AD-gnz">
-                                        <rect key="frame" x="0.0" y="340" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="290" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naval Ships:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTG-NG-3a9">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -317,7 +317,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Icx-I5-hjA">
-                                        <rect key="frame" x="0.0" y="374" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="319" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti-Aircraft Ware Fare:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4I-Ed-bX2">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -338,7 +338,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JkI-OJ-46O">
-                                        <rect key="frame" x="0.0" y="408" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="348" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Equipment:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whj-xE-Is1">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -359,7 +359,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yaz-j1-Cym">
-                                        <rect key="frame" x="0.0" y="442" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="377" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile SRBM Systems:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p19-cN-UkG">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -380,7 +380,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="D3t-Ir-ORW">
-                                        <rect key="frame" x="0.0" y="476" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="406" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicles and Fuel Tanks:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9G-W8-YK1">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -401,7 +401,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IVM-rr-EC8">
-                                        <rect key="frame" x="0.0" y="510" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="435" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cruise Missiles:  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnG-Yc-2Ac">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
