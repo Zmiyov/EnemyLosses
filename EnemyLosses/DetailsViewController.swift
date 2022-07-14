@@ -21,6 +21,10 @@ class DetailsViewController: UIViewController {
     @IBOutlet var amountOfDronesLabel: UILabel!
     @IBOutlet var amountOfNavalShipsLabel: UILabel!
     @IBOutlet var amountOfAntiAircraftWareFareLabel: UILabel!
+    @IBOutlet var amountOfSpecialEquipmentLabel: UILabel!
+    @IBOutlet var amountOfMobileSRBMSystemsLabel: UILabel!
+    @IBOutlet var amountOfVehiclesAndFuelTanksLabel: UILabel!
+    @IBOutlet var amountOfCruiseMissilesLabel: UILabel!
     
     
     var equipment: Equipment
@@ -36,8 +40,8 @@ class DetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateUI()
+        print(equipment)
     }
     
     func updateUI() {
@@ -49,31 +53,44 @@ class DetailsViewController: UIViewController {
         amountOfFieldArtilleryLabel.text = String(equipment.fieldArtillery)
         amountOfMrlLabel.text = String(equipment.mrl)
         
-//        if let amountOfMilitaryAuto = equipment.militaryAuto {
-//        amountOfMilitaryAutoLabel.text = String(amountOfMilitaryAuto)
-//        } else {
-//            amountOfMilitaryAutoLabel.text = "NaN"
-//        }
-//        if let amountOfFuelTanks = equipment.fuelTank {
-//            amountOfFuelTanksLabel.text = String(amountOfFuelTanks)
-//        } else {
-//            amountOfFuelTanksLabel.text = "NaN"
-//        }
+        if let amountOfMilitaryAuto = equipment.militaryAuto {
+            amountOfMilitaryAutoLabel.text = String(amountOfMilitaryAuto)
+        } else {
+            amountOfMilitaryAutoLabel.text = "N/A"
+        }
+        if let amountOfFuelTanks = equipment.fuelTank {
+            amountOfFuelTanksLabel.text = String(amountOfFuelTanks)
+        } else {
+            amountOfFuelTanksLabel.text = "N/A"
+        }
        
         amountOfDronesLabel.text = String(equipment.drone)
         amountOfNavalShipsLabel.text = String(equipment.navalShip)
         amountOfAntiAircraftWareFareLabel.text = String(equipment.antiAircraftWareFare)
+        
+        if let amountOfSpecialEquipment = equipment.specialEquipment {
+            amountOfSpecialEquipmentLabel.text = String(amountOfSpecialEquipment)
+        } else {
+            amountOfSpecialEquipmentLabel.text = "N/A"
+        }
+            
+        if let amountOfMobileSRBMSystems = equipment.mobileSRBMSystem {
+            amountOfMobileSRBMSystemsLabel.text = String(amountOfMobileSRBMSystems)
+        } else {
+            amountOfMobileSRBMSystemsLabel.text = "N/A"
+        }
+        
+        if let amountOfVehiclesAndFuelTanks = equipment.vehiclesAndFuelTanks {
+            amountOfVehiclesAndFuelTanksLabel.text = String(amountOfVehiclesAndFuelTanks)
+        } else {
+            amountOfVehiclesAndFuelTanksLabel.text = "N/A"
+        }
+        
+        if let amountOfCruiseMissiles = equipment.cruiseMissiles {
+            amountOfCruiseMissilesLabel.text = String(amountOfCruiseMissiles)
+        } else {
+            amountOfCruiseMissilesLabel.text = "N/A"
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

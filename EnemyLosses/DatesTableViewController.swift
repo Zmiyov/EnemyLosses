@@ -25,7 +25,6 @@ class DatesTableViewController: UITableViewController {
             do {
                 let fetchedItems = try await networkController.fetchPersonnel()
                 self.personnelsItems = fetchedItems
-                print(personnelsItems.count)
                 self.tableView.reloadData()
             } catch {
                 print("Error fetching data personnel: \(error)")
@@ -40,8 +39,6 @@ class DatesTableViewController: UITableViewController {
             do {
                 let fetchedItems = try await networkController.fetchEquipment()
                 self.equipmentsItems = fetchedItems
-                print(fetchedItems)
-                
             } catch {
                 print("Error fetching data equipment: \(error)")
             }
