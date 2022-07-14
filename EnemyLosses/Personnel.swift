@@ -8,7 +8,7 @@
 import Foundation
 
 struct Personnel: Codable {
-    var date: String
+    var date: Date
     var day: Int
     var personnel: Int
     var pow: Int

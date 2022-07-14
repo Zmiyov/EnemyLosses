@@ -75,10 +75,12 @@ class DatesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dates", for: indexPath)
         let dateItem = personnelsItems[indexPath.row]
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MMMM yyyy"
 
         var content = cell.defaultContentConfiguration()
-        content.text = String(dateItem.day)
-        content.secondaryText = dateItem.date
+        content.text = String(dateItem.day) + " " + "Day"
+        content.secondaryText = dateFormatter.string(from: dateItem.date)
         cell.contentConfiguration = content
 
         return cell

@@ -22,7 +22,13 @@ class NetworkController {
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw StoreItemError.personnelItemNotFound
         }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        
         let personnelResponse = try decoder.decode([Personnel].self, from: data)
 
         return personnelResponse
