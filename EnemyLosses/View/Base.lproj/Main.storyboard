@@ -12,7 +12,7 @@
         <scene sceneID="pEX-Ie-wzo">
             <objects>
                 <tableViewController id="D8m-kf-7wp" customClass="DatesTableViewController" customModule="EnemyLosses" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="N2c-wl-Qbm">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" id="N2c-wl-Qbm">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="D8m-kf-7wp" id="8vV-W4-rVw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Dates" id="zWu-Wi-LwX"/>
+                    <navigationItem key="navigationItem" title="Dates" largeTitleDisplayMode="always" id="zWu-Wi-LwX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMz-n7-XGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-Dh-BfI">
-                                <rect key="frame" x="8" y="118" width="374" height="75.666666666666686"/>
+                                <rect key="frame" x="8" y="118" width="374" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total combat losses of the Russian forces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ali-0v-Tr7">
                                         <rect key="frame" x="13.666666666666657" y="0.0" width="347" height="21.666666666666668"/>
@@ -74,8 +74,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjT-2k-pxw">
-                                        <rect key="frame" x="165.33333333333334" y="51.666666666666657" width="43.333333333333343" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <rect key="frame" x="163.66666666666666" y="51.666666666666664" width="47" height="26.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -413,7 +413,7 @@
                             <constraint firstItem="ENo-Ri-q9M" firstAttribute="trailing" secondItem="FgH-LZ-qg7" secondAttribute="trailing" constant="8" id="zud-W0-38N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XEx-Ah-EuD"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="XEx-Ah-EuD"/>
                     <connections>
                         <outlet property="amountOfAircraftsLabel" destination="CA4-Mv-ByK" id="jGX-UN-1bO"/>
                         <outlet property="amountOfAntiAircraftWareFareLabel" destination="Gyz-e2-bac" id="lWL-nI-MDu"/>
@@ -441,8 +441,8 @@
         <scene sceneID="6yg-21-eBb">
             <objects>
                 <navigationController id="D8P-zi-46m" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v9B-ST-gec">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="v9B-ST-gec">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

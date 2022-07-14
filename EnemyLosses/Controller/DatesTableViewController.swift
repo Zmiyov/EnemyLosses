@@ -80,11 +80,12 @@ class DatesTableViewController: UITableViewController {
         dateFormatter.dateFormat = "dd MMMM yyyy"
 
         var content = cell.defaultContentConfiguration()
-        content.text = String(dateItem.day) + " " + "Day"
-        content.secondaryText = dateFormatter.string(from: dateItem.date)
+        content.text = dateFormatter.string(from: dateItem.date)
+        content.secondaryText = String(dateItem.day) + " " + "Day"
         cell.contentConfiguration = content
 
         return cell
     }
 
 }
+
