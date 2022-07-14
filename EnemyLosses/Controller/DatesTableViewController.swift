@@ -55,9 +55,10 @@ class DatesTableViewController: UITableViewController {
         guard let index = equipmentsItems.first(where: { $0.day == dayFromPersonnels }) else {
             return nil
         }
-        let item = index
+        let equipmentItem = index
+        let personnelAmount = personnelsItems[indexPath.row].personnel
         
-        return DetailsViewController(coder: coder, equipment: item)
+        return DetailsViewController(coder: coder, equipment: equipmentItem, personnel: personnelAmount)
     }
     
     // MARK: - Table view data source

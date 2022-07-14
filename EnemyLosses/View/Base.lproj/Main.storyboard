@@ -12,16 +12,17 @@
         <scene sceneID="pEX-Ie-wzo">
             <objects>
                 <tableViewController id="D8m-kf-7wp" customClass="DatesTableViewController" customModule="EnemyLosses" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" id="N2c-wl-Qbm">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="N2c-wl-Qbm">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="separatorInset" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="dates" textLabel="tbS-oh-dYb" detailTextLabel="2Eu-Lr-nbV" style="IBUITableViewCellStyleValue1" id="Rb1-1G-C7P">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
+                                <rect key="frame" x="20" y="31.666666030883789" width="350" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rb1-1G-C7P" id="eNp-uD-NgD">
-                                    <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="321.33333333333331" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tbS-oh-dYb">
@@ -32,7 +33,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Eu-Lr-nbV">
-                                            <rect key="frame" x="309.66666666666663" y="16" width="43.666666666666664" height="14.333333333333334"/>
+                                            <rect key="frame" x="269.66666666666663" y="16" width="43.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -64,8 +65,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-Dh-BfI">
-                                <rect key="frame" x="8" y="118" width="374" height="78"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-Dh-BfI">
+                                <rect key="frame" x="8" y="118" width="374" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total combat losses of the Russian forces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ali-0v-Tr7">
                                         <rect key="frame" x="13.666666666666657" y="0.0" width="347" height="21.666666666666668"/>
@@ -74,7 +75,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjT-2k-pxw">
-                                        <rect key="frame" x="163.66666666666666" y="51.666666666666664" width="47" height="26.333333333333336"/>
+                                        <rect key="frame" x="163.66666666666666" y="41.666666666666657" width="47" height="26.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -82,18 +83,18 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-LZ-qg7">
-                                <rect key="frame" x="8" y="260" width="374" height="500"/>
+                                <rect key="frame" x="8" y="236" width="374" height="534"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6fK-Lx-NPa">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-hQ-8te">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aircrafts:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9I-8L-lIn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personnel:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BF4-mL-1Dm">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CA4-Mv-ByK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aY1-gP-jVf">
                                                 <rect key="frame" x="243" y="0.0" width="131" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -101,12 +102,33 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="R9I-8L-lIn" firstAttribute="width" secondItem="6fK-Lx-NPa" secondAttribute="width" multiplier="0.65" constant="-30" id="Sek-qC-l6H"/>
-                                            <constraint firstItem="CA4-Mv-ByK" firstAttribute="width" secondItem="6fK-Lx-NPa" secondAttribute="width" multiplier="0.35" id="Y48-wE-O4w"/>
+                                            <constraint firstItem="aY1-gP-jVf" firstAttribute="width" secondItem="jHG-hQ-8te" secondAttribute="width" multiplier="0.35" id="7jd-5k-rt5"/>
+                                            <constraint firstItem="BF4-mL-1Dm" firstAttribute="width" secondItem="jHG-hQ-8te" secondAttribute="width" multiplier="0.65" constant="-30" id="BYb-PK-owl"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="49w-Bu-ZcS">
+                                        <rect key="frame" x="0.0" y="34" width="374" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aircrafts:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaM-3b-iVN">
+                                                <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6I-7r-wMp">
+                                                <rect key="frame" x="243" y="0.0" width="131" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="EaM-3b-iVN" firstAttribute="width" secondItem="49w-Bu-ZcS" secondAttribute="width" multiplier="0.65" constant="-30" id="KWn-fu-JMd"/>
+                                            <constraint firstItem="t6I-7r-wMp" firstAttribute="width" secondItem="49w-Bu-ZcS" secondAttribute="width" multiplier="0.35" id="jhf-yT-TQG"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fug-J4-b2D">
-                                        <rect key="frame" x="0.0" y="34" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="68" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helicopters:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSF-cg-1q7">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -127,7 +149,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fKN-Bk-4m7">
-                                        <rect key="frame" x="0.0" y="68" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="102" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanks:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-JD-fM4">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -148,7 +170,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1ei-sa-tBz">
-                                        <rect key="frame" x="0.0" y="102" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="136" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APC:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtP-VY-7Vb">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -169,7 +191,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JZ5-Ae-hpa">
-                                        <rect key="frame" x="0.0" y="136" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="170" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Artillery:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcX-0b-OE9">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -190,7 +212,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="obF-q8-5Gv">
-                                        <rect key="frame" x="0.0" y="170" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="204" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MRL:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-2b-fhQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -211,7 +233,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oy8-wL-J4Z">
-                                        <rect key="frame" x="0.0" y="204" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="238" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Military Auto:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yki-d5-gVH">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -232,7 +254,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZ4-eJ-cMV">
-                                        <rect key="frame" x="0.0" y="238" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="272" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Tanks:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecF-dZ-1BI">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -253,7 +275,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cqY-cr-hof">
-                                        <rect key="frame" x="0.0" y="272" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="306" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drones:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzs-M1-2EF">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -274,7 +296,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="EDD-AD-gnz">
-                                        <rect key="frame" x="0.0" y="306" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="340" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naval Ships:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTG-NG-3a9">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -295,7 +317,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Icx-I5-hjA">
-                                        <rect key="frame" x="0.0" y="340" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="374" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anti-Aircraft Ware Fare:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4I-Ed-bX2">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -316,7 +338,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JkI-OJ-46O">
-                                        <rect key="frame" x="0.0" y="374" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="408" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Equipment:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whj-xE-Is1">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -337,7 +359,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yaz-j1-Cym">
-                                        <rect key="frame" x="0.0" y="408" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="442" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile SRBM Systems:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p19-cN-UkG">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -358,7 +380,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="D3t-Ir-ORW">
-                                        <rect key="frame" x="0.0" y="442" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="476" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicles and Fuel Tanks:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9G-W8-YK1">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -379,7 +401,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IVM-rr-EC8">
-                                        <rect key="frame" x="0.0" y="476" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="510" width="374" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cruise Missiles:  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnG-Yc-2Ac">
                                                 <rect key="frame" x="0.0" y="0.0" width="213" height="24"/>
@@ -406,7 +428,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FgH-LZ-qg7" firstAttribute="leading" secondItem="ENo-Ri-q9M" secondAttribute="leading" constant="8" id="M8b-RG-wVv"/>
-                            <constraint firstItem="ENo-Ri-q9M" firstAttribute="bottom" secondItem="FgH-LZ-qg7" secondAttribute="bottom" constant="50" id="NIX-nM-FB7"/>
+                            <constraint firstItem="ENo-Ri-q9M" firstAttribute="bottom" secondItem="FgH-LZ-qg7" secondAttribute="bottom" constant="40" id="NIX-nM-FB7"/>
                             <constraint firstItem="AIh-Dh-BfI" firstAttribute="top" secondItem="ENo-Ri-q9M" secondAttribute="top" constant="30" id="Rcy-DA-fI5"/>
                             <constraint firstItem="ENo-Ri-q9M" firstAttribute="trailing" secondItem="AIh-Dh-BfI" secondAttribute="trailing" constant="8" id="Zrg-8w-bmE"/>
                             <constraint firstItem="AIh-Dh-BfI" firstAttribute="leading" secondItem="ENo-Ri-q9M" secondAttribute="leading" constant="8" id="rEn-Nk-RJI"/>
@@ -415,7 +437,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="XEx-Ah-EuD"/>
                     <connections>
-                        <outlet property="amountOfAircraftsLabel" destination="CA4-Mv-ByK" id="jGX-UN-1bO"/>
+                        <outlet property="amountOfAircraftsLabel" destination="t6I-7r-wMp" id="5Fs-yD-5q4"/>
                         <outlet property="amountOfAntiAircraftWareFareLabel" destination="Gyz-e2-bac" id="lWL-nI-MDu"/>
                         <outlet property="amountOfApcLabel" destination="5g7-sw-p3k" id="FMX-PW-nlp"/>
                         <outlet property="amountOfCruiseMissilesLabel" destination="QQD-ML-gvA" id="bDX-Ri-zHV"/>
@@ -427,6 +449,7 @@
                         <outlet property="amountOfMobileSRBMSystemsLabel" destination="byQ-ck-7HL" id="rea-qN-QMY"/>
                         <outlet property="amountOfMrlLabel" destination="7ba-lV-ScQ" id="uR1-ic-1mh"/>
                         <outlet property="amountOfNavalShipsLabel" destination="CGL-OX-Duw" id="Psb-F9-dud"/>
+                        <outlet property="amountOfPersonnelLabel" destination="aY1-gP-jVf" id="Mrm-4c-02j"/>
                         <outlet property="amountOfSpecialEquipmentLabel" destination="zXi-4y-zk6" id="hsO-K3-ehV"/>
                         <outlet property="amountOfTanksLabel" destination="ZoC-Zu-Li9" id="8Kz-nO-5s7"/>
                         <outlet property="amountOfVehiclesAndFuelTanksLabel" destination="FTJ-m1-lTE" id="1k5-8u-PR5"/>

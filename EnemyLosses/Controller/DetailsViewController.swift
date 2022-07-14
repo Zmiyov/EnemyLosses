@@ -10,6 +10,7 @@ import UIKit
 class DetailsViewController: UIViewController {
     
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var amountOfPersonnelLabel: UILabel!
     @IBOutlet var amountOfAircraftsLabel: UILabel!
     @IBOutlet var amountOfHelicoptersLabel: UILabel!
     @IBOutlet var amountOfTanksLabel: UILabel!
@@ -27,9 +28,11 @@ class DetailsViewController: UIViewController {
     @IBOutlet var amountOfCruiseMissilesLabel: UILabel!
     
     var equipment: Equipment
+    var personnel: Int
     
-    init?(coder:NSCoder, equipment: Equipment) {
+    init?(coder:NSCoder, equipment: Equipment, personnel: Int) {
         self.equipment = equipment
+        self.personnel = personnel
         super.init(coder: coder)
     }
     
@@ -47,6 +50,7 @@ class DetailsViewController: UIViewController {
         dateFormatter.dateFormat = "dd MMMM yyyy"
         
         dateLabel.text = dateFormatter.string(from: equipment.date)
+        amountOfPersonnelLabel.text = String(personnel)
         amountOfAircraftsLabel.text = String(equipment.aircraft)
         amountOfHelicoptersLabel.text = String(equipment.helicopter)
         amountOfTanksLabel.text = String(equipment.tank)
