@@ -24,7 +24,7 @@ class NetworkController {
         }
         let decoder = JSONDecoder()
         let personnelResponse = try decoder.decode([Personnel].self, from: data)
-        //print(personnelResponse)
+
         return personnelResponse
     }
     
@@ -39,7 +39,6 @@ class NetworkController {
         let stringJson = String(decoding: data, as: UTF8.self)
         let correctStringJson = stringJson.replacingOccurrences(of: "NaN", with: "null")
         let correctData = Data(correctStringJson.utf8)
-        print(correctStringJson)
         
         let decoder = JSONDecoder()
         let equipmentResponse = try decoder.decode([Equipment].self, from: correctData)
