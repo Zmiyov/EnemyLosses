@@ -8,7 +8,7 @@
 import Foundation
 
 struct Equipment: Codable {
-    var date: String
+    var date: Date
     var day: Int?
     var aircraft: Int
     var helicopter: Int
@@ -48,7 +48,7 @@ struct Equipment: Codable {
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        date = try values.decode(String.self, forKey: .date)
+        date = try values.decode(Date.self, forKey: .date)
         
         if let day = try? values.decode(Int.self, forKey: .day) {
             self.day = day

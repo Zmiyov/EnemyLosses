@@ -46,7 +46,12 @@ class NetworkController {
         let correctStringJson = stringJson.replacingOccurrences(of: "NaN", with: "null")
         let correctData = Data(correctStringJson.utf8)
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        
         let equipmentResponse = try decoder.decode([Equipment].self, from: correctData)
         
         return equipmentResponse

@@ -37,15 +37,22 @@ class DetailsViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        print(equipment)
+       
     }
     
+    
     func updateUI() {
-        dateLabel.text = equipment.date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MMMM yyyy"
+        
+        dateLabel.text = dateFormatter.string(from: equipment.date)
         amountOfAircraftsLabel.text = String(equipment.aircraft)
         amountOfHelicoptersLabel.text = String(equipment.helicopter)
         amountOfTanksLabel.text = String(equipment.tank)
