@@ -52,10 +52,9 @@ class DatesTableViewController: UITableViewController {
         }
         let dayFromPersonnels = personnelsItems[indexPath.row].day
         
-        guard let index = equipmentsItems.first(where: { $0.day == dayFromPersonnels }) else {
+        guard let equipmentItem = equipmentsItems.first(where: { $0.day == dayFromPersonnels }) else {
             return nil
         }
-        let equipmentItem = index
         let personnelAmount = personnelsItems[indexPath.row].personnel
         
         return DetailsViewController(coder: coder, equipment: equipmentItem, personnel: personnelAmount)
