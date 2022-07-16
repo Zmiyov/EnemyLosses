@@ -63,6 +63,7 @@ class DetailsViewController: UIViewController {
         } else {
             amountOfMilitaryAutoLabel.text = "N/A"
         }
+        
         if let amountOfFuelTanks = equipment.fuelTank {
             amountOfFuelTanksLabel.text = String(amountOfFuelTanks)
         } else {

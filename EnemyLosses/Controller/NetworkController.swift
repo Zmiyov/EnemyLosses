@@ -14,6 +14,7 @@ class NetworkController {
         case equipmentItemNotFound
     }
     
+    
     func fetchPersonnel() async throws -> [Personnel] {
         let urlComponents = URLComponents(string: "https://raw.githubusercontent.com/MacPaw/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_personnel.json")!
         
@@ -22,7 +23,6 @@ class NetworkController {
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw StoreItemError.personnelItemNotFound
         }
-        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
