@@ -42,6 +42,7 @@ class NetworkController {
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw StoreItemError.equipmentItemNotFound
         }
+        // Correcting wrong values in JSON
         let stringJson = String(decoding: data, as: UTF8.self)
         let correctStringJson = stringJson.replacingOccurrences(of: "NaN", with: "null")
         let correctData = Data(correctStringJson.utf8)
